@@ -66,64 +66,95 @@ function imprimeTresCoresFavoritas() {
 }
 
 // EXERCÍCIO 06
-function retornaStringEmMaiuscula(string); {
-  // implemente sua lógica 
-  let string
-  console.log(string.toUpperCase())
-  return string
+function retornaStringEmMaiuscula(string) {
+  // implemente sua lógica aqui
+  const letraMaiuscula = string.toUpperCase()
+  return letraMaiuscula
 }
 
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
+  const quantidadeIngressos = custo /valorIngresso
+  return quantidadeIngressos
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
+  const stringsIguais = string1.length == string2.length
+  return stringsIguais
+
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+const primeiroElemento = array[0]
+return primeiroElemento
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
+  const ultimoElemento = array[array.length-1]
+  return ultimoElemento
+  
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+ //const a = array[0] 
+ //const b = array[array.length-1]
+ const c = array[0] 
+ array[0] = array[array.length-1]
+ array[array.length-1] = c
+return array
 
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+  const stringsIguais = (string1.toUpperCase() === string2.toUpperCase())
+  return stringsIguais
+
 
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-
+  anoAtual = Number(prompt("Qual o ano atual?"))
+  anoDeNascimento= Number(prompt("Qual o ano do seu nascimento?"))
+  anoCarteiraIdentidade = Number(prompt("Qual o ano de emisão de sua carteira de identidade?"))
+  let ano = anoAtual ===
+  console.log()
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
+let bissextosUm = ano % 400 === 0
+let bissextosDois = ano % 4 === 0
+let bissextoExceto = ano % 100 === 0 && ano % 400 !== 0
+let ehBissexto = bissextosUm && (bissextosDois && !bissextoExceto)
+return ehBissexto
 
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+  idadeMaior = Number(prompt("Você tem mais de 18 anos?"))
+  ensinoMedio = prompt("Você possui ensino médio completo?")
+  anoAtual = prompt("Você possui disponibilidade exclusiva durante os horários do curso?")
+  const idadeMaior 
+
 
 }
