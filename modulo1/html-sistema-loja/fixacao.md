@@ -7,4 +7,4 @@ function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
  comissao = qtdeCarrosVendidos * 100 + 0.05 * valorTotalVendas
  salarioFinal =  comissao + salarioFixo
  return salarioFinal
-}
+} 

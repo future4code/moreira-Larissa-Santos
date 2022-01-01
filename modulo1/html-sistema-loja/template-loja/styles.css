@@ -1,0 +1,94 @@
+/*Estilização*/
+
+h1{
+    color:brown;
+    font-size:70px;
+}
+
+p{
+    color:black;
+    font-size:25px;
+    font-style:oblique;
+
+
+}
+
+.cabecario{
+    background-color:indianred;
+    
+}
+
+a{
+    color:black;
+    font-size:25px;
+    font-style:oblique;
+    margin: 2cm;
+
+}
+.nome{
+font-size:18px;
+
+display:inline;
+ }
+
+img{
+margin:0.50cm;
+
+}
+footer{
+    margin:0cm;
+    color:rgb(5, 1, 1);
+    font-size:20px;
+    font-style:oblique;
+}
+.imagens{
+    display:inline;
+}
+
+p1{
+color:black;
+font-size:25px;
+font-style:oblique;
+
+}
+
+.fonte{
+    font-size:15px;
+    font-style:italic;
+}
+
+.indices a{
+    font-size:22px;
+
+}
+
+h2{
+    font-size:24px;
+    background-color:indianred;
+
+
+}
+.descricoes th{
+    font-size:20px; 
+    padding-right:40px ;
+}
+
+.foots td img{
+width: 6cm;
+height: 6cm;
+}
+.foots td{
+    padding-right: 18px;
+
+}
+
+.fonte a{
+    font-size:22px;
+    
+
+}
+
+.abas a{
+    font-size:22px;
+
+}
