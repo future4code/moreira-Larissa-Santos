@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header {
+    background-color:yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 10px 22px;
+}
+
+button {
+    padding: 0px px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+      
+  .btn-text-top {
+    background-color: #f5f6fa;
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 15px 50px 15px 30px;
+    border-radius: 10px;
+    width: 100%!important;
+    height: 30px;
+    font-weight: 300;
+    color: #8795a2;
+  }
+      
+  .btn-buscar-top {
+    width: 20px!important;
+    height: 22px;
+    background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+    cursor: pointer!important;
+    border: none;
+    transform: translateY(-50%);
+    padding: 0;
+    position: relative;
+    top: -35px;
+    left: 280px;
+  }
+  
+h1 {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+videos {
+    max-width: 100%;
+    display: block;
+
+}
+.videos {
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;    
+  }
+  
+  .videos > div {
+    margin: 10px;
+    width: 400px;
+  }
+  .videos >div video{
+      width: 100%;
+  }
+
+  .video3 {
+    width: 800px;
+
+  }
+
+footer {
+    background-color:yellowgreen;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 15px;
+
+}
+
+section {
+    flex-grow: 1;
+}
+.inicio {
+    margin-right: 4px
+
+}
+
+
+h2 {
+    font-size: large;
+    font-weight: bolder;
+    padding: 18px;
+}
+
+p {
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+#conteudo {
+    display: flex;
+    flex-wrap: wrap
+}
+
