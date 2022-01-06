@@ -31,8 +31,9 @@ function retornaNumerosPares(array) {
 // EXERCÍCIO 05
 
 function retornaNumerosParesElevadosADois(array) {
-    return Math.pow(array, 2)
-}
+    return array.filter(pares =>(pares % 2) ==0 ** 2);   
+     
+    }
 
 // EXERCÍCIO 06
 
@@ -76,6 +77,15 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
+    if(ladoA === ladoB && ladoA === ladoC){
+        return "Equilátero"
+    }
+    if(ladoA== ladoB || ladoA === ladoC|| ladoB == ladoC){
+        return "Isósceles";
+    }
+    if(ladoA !== ladoB || ladoA !== ladoC || ladoB !== ladoC){
+    return "Escaleno"
+    }
 }
 
 // EXERCÍCIO 10
