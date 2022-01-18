@@ -1,4 +1,4 @@
-import "./styles.css";
+
 import React from "react";
 import styled from "styled-components";
 import { Etapa1 } from "./components/Etapa1";
