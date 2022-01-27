@@ -11,11 +11,11 @@ margin-right: 8px;
 button{
     margin: 8px;   
 }
-
 `
 const Lista = styled.div`
 margin-left: 100px;
 `
+
 export default class App extends React.Component {
   state = {
     page: 1,
