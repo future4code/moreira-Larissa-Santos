@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
+import img from "../images/tropical.jpg"
 
 const Body1 = styled.div`
 display: grid;
@@ -14,8 +15,8 @@ const PlaylistDiv = styled.div`
 display: flex;
 flex-direction: column;
 padding: 12px;
-background-color: black;
-color: green;
+background-color: #556B2F;
+color: black;
 
     >h3{
         text-align: center;
@@ -35,15 +36,15 @@ border-radius: 15px;
     >button{
         font-size: 20px;
         border-radius: 50%;
-        color: red;
+        color: black;
         border: none;
     }
     >button:hover{
-        background-color: ;
-        color: red;
+        
+        color: black;
     }
     :hover{
-        background-color: #181818;
+        background-color: white;
         transition: 400ms;
     }
 `
@@ -62,13 +63,13 @@ padding: 5px;
     >button{
         padding: 4px;
         width: 50px;
-        color: limegreen;
+        color: black;
         border-radius: 15px;
-        border: 1px limegreen solid;
+        border: 1px black solid;
         background-color: transparent;
     }
     >button:hover{
-        background: lime;
+        background: white;
         color: black;
         transition: 400ms;
     }
@@ -77,19 +78,17 @@ padding: 5px;
 const ContainerTracks = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-align-items: center;
-background-color: black ;
-width: 420px;
-margin: 10px;
-padding: 25px;
+background-color: #98FB98 ;
+width: 400px;
+margin: 20px;
+padding: 15px;
 
     >button{
         background-color: transparent;
         border-radius: 15px;
         border: 1px solid red;
         color: red;
-        padding: 5px;
+        padding: 10px;
         transition: 500ms;
     }
     >button:hover{
@@ -102,11 +101,13 @@ font-size:35px;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: green;
+background-image: url(${img});
 color: black;
 height: 100%;
     >h3{
         text-align: center;
+        color: black;
+        font-size: 50px bold;
         
     }
 `
@@ -116,8 +117,8 @@ font-size:25px;
 display: flex;
 flex-direction: column;
 padding: 32px;
-background-color: black;
-color: green;
+background-color: #556B2F;
+color: black;
 align-items: center;
     >h3{
         text-align: center;
@@ -126,7 +127,7 @@ align-items: center;
         padding: 5px;
         margin-bottom: 8px;
         border-radius: 7px;
-        border: 1px white solid;
+        border: 1px black solid;
         background-color: transparent;
         color: white;
     }
@@ -134,13 +135,13 @@ align-items: center;
     >button{
         padding: 4px;
         width: 100px;
-        color: limegreen;
+        color: black;
         border-radius: 15px;
-        border: 1px limegreen solid;
+        border: 1px black solid;
         background-color: transparent;
     }
     >button:hover{
-        background: lime;
+        background: white;
         color: black;
         transition: 400ms; 
     }
@@ -306,7 +307,7 @@ export default class ListPlaylist extends React.Component{
 
         return<Body1>
            <PlaylistDiv>
-                <h3>Suas Playlists</h3>    
+                <h3>Playlists Brasileiras</h3>    
                 {listaPlaylist}        
                 <CriarPlaylist>
                     <input
