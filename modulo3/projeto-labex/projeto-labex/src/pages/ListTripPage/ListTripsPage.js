@@ -1,26 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer"
-import ContainerPrincipal from "../components/DivBody.js"
-import styled from "styled-components";
-import ListCards from "../components/ListCards";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer"
+import { Container, ContainerPrincipal, ListCards, Container2, Button } from '../ListTripPage/styled'
 import { useNavigate } from "react-router-dom"
-import { URL_BASE } from "../components/UrlBase";
-import { useRequestData } from "../components/CustomHooks/UseRequestData";
+import { URL_BASE } from "../../components/UrlBase";
+import { useRequestData } from "../../components/CustomHooks/UseRequestData";
 //useHistory foi substituido por useNavigate no router 6
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 97vh;
-  
-`
 
-const ContainerCards = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 2px;  
-`
 
 export default function ListTripsPage() {
     const [tripList, loadingTripList, errorTripList] = useRequestData(`${URL_BASE}/trips`)
@@ -59,9 +46,10 @@ export default function ListTripsPage() {
                     <p>Não há viagens</p>
                 )}
                 <p>{list}</p>
-                <button onClick={() => GoBack(-1)}>voltar</button>
-                <button onClick={() => GoApplicationForm()}>Formulario de Viagens</button>
-
+                <Container2>
+                    <Button onClick={() => GoBack(-1)}>voltar</Button>
+                    <Button onClick={() => GoApplicationForm()}>Formulario de Viagens</Button>
+                </Container2>
             </ContainerPrincipal>
 
             <Footer />

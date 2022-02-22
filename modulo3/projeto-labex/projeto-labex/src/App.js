@@ -1,1 +1,9 @@
-cdf
+import { Router } from './route/Router'
+
+function App() {
+  return (
+    <Router />
+  );
+}
+
+export default A
