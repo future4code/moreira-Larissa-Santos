@@ -6,7 +6,7 @@ flex-direction: column;
 min-height: 100vh;
 background-color: #cfcfcf;
 min-height: 100vh;
-background-color: #cfcfcf;
+background-color: #00FA9A;
 align-items: center;
 justify-content: center;
 align-content: center;
@@ -26,7 +26,7 @@ padding: 1vh;
 
 export const ContainerNewPost = styled.div`
 display: flex;
-flex-direction: column;
+flex-direction: align-self start;
 justify-content: center;
 align-items: center;
 padding: 1vh;
@@ -36,12 +36,13 @@ export const Input = styled.input`
 width: 90%;
 height: 3vh;
 background-color: #cfcfcf;
-border-radius: 6px;
+border-radius: 9px;
 padding: 5px;
 `
 
 export const Button = styled.button`
+float:right;
 border-radius: 10px;
-background-color: #66a3c4;
+background-color: #00FF7F;
 cursor: pointer;
 `

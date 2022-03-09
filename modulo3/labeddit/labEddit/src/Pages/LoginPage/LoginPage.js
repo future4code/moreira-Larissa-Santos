@@ -21,7 +21,7 @@ export default function LoginPage() {
                 <Form onSubmit={sendForm}>
                     <h3>Login:</h3>
                     <Input
-                        placeholder={"email"}
+                        placeholder={"Email"}
                         type={"email"}
                         name={"email"}
                         value={form.email}
@@ -30,7 +30,7 @@ export default function LoginPage() {
                     />
 
                     <Input
-                        placeholder={"senha"}
+                        placeholder={"Senha de acesso"}
                         type={"password"}
                         name={"password"}
                         value={form.password}
@@ -42,7 +42,7 @@ export default function LoginPage() {
                     <Button type={"submit"}>Login</Button>
                 </Form>
             </ContainerNewPost>
-            <Button onClick={() => GoToSignupPage(navigate)}>Cadastrar</Button>
+            <Button onClick={() => GoToSignupPage(navigate)}>Novo Cadastro</Button>
 
         </ContainerPrincipal>)
 }

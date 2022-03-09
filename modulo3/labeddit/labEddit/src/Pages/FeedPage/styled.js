@@ -12,7 +12,7 @@ export const ContainerPrincipal = styled.div`
 display: flex;
 flex-direction: column;
 min-height: 100vh;
-background-color: #cfcfcf;
+background-color: #00FA9A;
 `
 export const Container = styled.div`
 margin: 1vh;
@@ -29,8 +29,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-border: 1px solid #66a3c4;
-border-radius: 6px;
+border: 1px solid black;
+border-radius: 6px black;
 height: 20vh;
 min-width: 29vw;
 background-color: #f2f0f0;
@@ -39,12 +39,12 @@ padding: 1vh;
 
 export const ListCards = styled.div`
 margin: 1vh;
-border: 2px solid #66a3c4;  
+border: 2px solid black;  
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-box-shadow: 5px 10px #3f3f42;
+box-shadow: 5px 10px black;
 border-radius: 6px;
 background-color: #f2f0f0;
 width: 30vw;
@@ -78,6 +78,6 @@ padding: 1px;
 `
 export const Button = styled.button`
 border-radius: 10px;
-background-color: #66a3c4;
+background-color: #00FF7F;
 cursor: pointer;
 `

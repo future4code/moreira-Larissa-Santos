@@ -4,9 +4,9 @@ export const ContainerPrincipal = styled.div`
 display: flex;
 flex-direction: column;
 min-height: 100vh;
-background-color: #cfcfcf;
+background-color: #00FA9A	;
 min-height: 100vh;
-background-color: #cfcfcf;
+background-color: #00FA9A	;
 align-items: center;
 justify-content: center;
 align-content: center;
@@ -41,7 +41,8 @@ padding: 5px;
 `
 
 export const Button = styled.button`
+align-items: columns;
 border-radius: 10px;
-background-color: #66a3c4;
+background-color: #00FF7F;
 cursor: pointer;
 `

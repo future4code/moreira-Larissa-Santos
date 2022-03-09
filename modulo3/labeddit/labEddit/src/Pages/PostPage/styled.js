@@ -12,7 +12,7 @@ export const ContainerPrincipal = styled.div`
 display: flex;
 flex-direction: column;
 min-height: 100vh;
-background-color: #cfcfcf;
+background-color: #00FA9A;
 `
 
 export const Form = styled.form`
@@ -21,7 +21,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-border: 1px solid #66a3c4;
+border: 1px solid black;
 border-radius: 6px;
 height: 10vh;
 min-width: 30vw;
@@ -31,12 +31,12 @@ padding: 1vh;
 
 export const ListCards = styled.div`
 margin: 15px;
-border: 2px solid #66a3c4;  
+border: 2px solid black;  
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-box-shadow: 5px 10px #3f3f42;
+box-shadow: 5px 10px black;
 border-radius: 6px;
 background-color: #f2f0f0;
 width: 20vw;
@@ -64,20 +64,20 @@ export const Input = styled.input`
 width: 90%;
 margin-top: 1vh;
 height: 5vh;
-background-color: #cfcfcf;
+background-color: #f2f0f0 ;
 border-radius: 6px;
 padding: 1px;
 `
 
 export const Button = styled.button`
 border-radius: 10px;
-background-color: #66a3c4;
+background-color: #00FF7F;
 cursor: pointer;
 `
 
 export const Button2 = styled.button`
 border-radius: 10px;
-background-color: #66a3c4;
+background-color: #00FF7F;
 cursor: pointer;
 align-self: center;
 `

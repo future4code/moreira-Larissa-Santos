@@ -19,7 +19,7 @@ export default function SignupPage() {
                     <h3>Cadastre-se:</h3>
 
                     <Input
-                        placeholder={"username"}
+                        placeholder={"Nome"}
                         type={"text"}
                         name={"username"}
                         value={form.username}
@@ -28,7 +28,7 @@ export default function SignupPage() {
                     />
 
                     <Input
-                        placeholder={"email"}
+                        placeholder={"Email"}
                         type={"email"}
                         name={"email"}
                         value={form.email}
@@ -37,7 +37,7 @@ export default function SignupPage() {
                     />
 
                     <Input
-                        placeholder={"senha"}
+                        placeholder={"Senha"}
                         type={"password"}
                         name={"password"}
                         value={form.password}

@@ -5,7 +5,7 @@ export default function Footer(){
 
     return(
         <ContainerPrincipal>
-            <p>Banininha Group</p>
+            <p>Rede Social LariPost</p>
         </ContainerPrincipal>
     )
 }

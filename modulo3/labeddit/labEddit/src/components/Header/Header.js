@@ -2,7 +2,7 @@ import React from "react";
 import { ContainerPrincipal, Button, Img, ParagrafoPersonalizado } from "./styled";
 import { useNavigate } from "react-router-dom";
 import { GoToFeedPage, GoToLoginPage } from "../../Routes/RouteFunctions";
-import Logo from "../../img/roboLabeddit.svg"
+import Logo from "../../img/roboLabeddit.png"
 export default function Header(){
     const navigate = useNavigate()
 
@@ -14,8 +14,8 @@ export default function Header(){
     return(
         <ContainerPrincipal>
             <Img src={Logo} onClick={()=>GoToFeedPage(navigate)} />
-            <ParagrafoPersonalizado onClick={()=>GoToFeedPage(navigate)}>Labbedit</ParagrafoPersonalizado>
-            <Button onClick={()=> Logout(navigate)}>Logout</Button>
+            <ParagrafoPersonalizado onClick={()=>GoToFeedPage(navigate)}>LariPost</ParagrafoPersonalizado>
+            <Button onClick={()=> Logout(navigate)}>Login</Button>
         </ContainerPrincipal>
     )
 }

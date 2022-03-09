@@ -13,16 +13,18 @@ width: 5vw;
 align-self: center;
 justify-self: center;
 border-radius: 10px;
-background-color: #66a3c4;
+background-color: #98FB98;
 cursor: pointer;
 `
 export const Img = styled.img`
-height: 3em;
-width: 3em;
+height: 3.9em;
+width: 3.9em;
 cursor: pointer;
 justify-self: center;
 ` 
 
 export const ParagrafoPersonalizado = styled.p`
 justify-self: center;
+font-size: 30px; 
+font-family: fantasy;
 `

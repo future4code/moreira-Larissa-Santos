@@ -26,7 +26,6 @@ export default function PostPage() {
     const [comments, GetComments] = useRequestData([], setIsLoading, `${URL_BASE}/posts/${id}/comments`)
     const comments1 = comments
 
-    // let voteImage = Logo 
 
     useEffect(() => {
 
