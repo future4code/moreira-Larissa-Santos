@@ -1,70 +1,27 @@
-export const users = [
-   {
-      id: 'tayanne-novais-gebru',
-      playlists: [
-         {
-            id: '28e07ef5-4c6f-4478-9998-1fae4c6d4745',
-            name: 'mpb',
-            tracks: [
-               {
-                  id: '8b4215f1-950b-4c06-bfd6-80c2f8d1bb19',
-                  name: 'Oração',
-                  artist: 'Linn da Quebrada',
-                  url: 'https://www.youtube.com/watch?v=y5rY2N1XuLI',
-               },
-               {
-                  id: '8b4215f1-950b-4c06-bfd6-80c2f8d1bc49',
-                  name: 'Mulher do Fim do Mundo',
-                  artist: 'Elza Soares',
-                  url: 'https://www.youtube.com/watch?v=6SWIwW9mg8s',
-               },
-            ],
-         },
-         {
-            id: '28e07ef5-4c6f-4478-9998-1fae4c6d4543',
-            name: 'Rock',
-            tracks: [
-               {
-                  id: '8b4215f1-950b-4c06-bfd6-80c2f8d1cc08',
-                  name: 'Céu Azul',
-                  artist: 'Charlie Brown Jr.',
-                  url: 'https://www.youtube.com/watch?v=0dLX40UMUKo',
-               },
-               {
-                  id: '8b4215f1-950b-4c06-bfd6-80c2f8d1bc75',
-                  name: 'By The Way',
-                  artist: 'Red Hot Chili Peppers',
-                  url: 'https://www.youtube.com/watch?v=YXdOAUKCc0k',
-               },
-            ],
-         },
-      ],
-   },
-   {
-      id: "amanda-rangel-newton",
-      playlists: [
-         {
-            id: "28e07ef5-4c6f-4478-9998-1fae4c6d4252",
-            name: "rock",
-            tracks: [
-               {
-                  id: "8b4215f1-950b-4c06-bfd6-80c2f8d1bb09",
-                  name: "Under Pressure",
-                  artist: "Queen",
-                  url: "https://www.youtube.com/watch?v=a01QQZyl-_I"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      id: "indio-medeiros-vaughan",
-      playlists: [
-         {
-            id: "28e07ef5-4c6f-4478-9998-1fae4c6d4255",
-            name: "rock",
-            tracks: []
-         }
-      ]
-   }
-];
+type Product = {
+   id: number,
+   name: string,
+   price: number
+}
+export const productsBeleza: Product[] = [
+  {
+     "id": 1,
+     "name": "Creme de Pele Natura",
+     "price": 48.00
+  },
+  {
+     "id": 2,
+     "name": "Oléo Corporal Eudora",
+     "price": 56.00
+  },
+  {
+     "id": 3,
+     "name": "Protetor Térmico Avon",
+     "price": 25.00
+  },
+  {
+     "id": 4,
+     "name": "Sabonete Líquido Boticário",
+     "price": 31.00
+  }
+]

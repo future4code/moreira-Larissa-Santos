@@ -71,6 +71,6 @@ app.delete("/deleta/:id", (req, res) => {
         
         res.send(produtoNu)
     } else {
-        throw new Error("Deu erro")
+        throw new Error("Erro")
     }
 })
