@@ -1,4 +1,4 @@
-import express, {Request, Response} from 'express'; 
+import express from 'express'; 
 import { comidas } from "./data";
 
 const app = express();
