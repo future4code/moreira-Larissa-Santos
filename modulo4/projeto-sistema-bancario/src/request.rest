@@ -9,6 +9,7 @@ Content-Type: application/json
 
 {
 "id": 9, "name": "Angelo", "cpf": 99999999999, "birth": "2021-05-15", "balance": 0, "internalTransfer": [2000]
+
 }
 
 ###
