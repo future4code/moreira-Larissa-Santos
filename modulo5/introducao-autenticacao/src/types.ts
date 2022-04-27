@@ -1,7 +1,9 @@
-export type user = {
-   id: string
-   email: string
-   password: string
-   name: string
-   nickname: string
+export type AuthenticationData = {
+    id: string
+}
+
+export type User = {
+    id: AuthenticationData
+    email: string
+    password: string
 }

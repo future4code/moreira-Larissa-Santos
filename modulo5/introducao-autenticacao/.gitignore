@@ -1,7 +1,5 @@
 node_modules
 build
-
 .env
+package-lock.json
 
-.vscode
-requests.rest

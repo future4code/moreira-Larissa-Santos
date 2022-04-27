@@ -1,43 +1,43 @@
-import { Request, Response } from "express";
-import connection from "../connection";
-import { user } from "../types";
+import { Request, Response } from 'express'
+import { generateId } from '../services/generateId'
+import { generateToken } from '../services/generateToken'
+import { getUserByEmail } from '../services/getUserByEmail'
+import { insertUserIntoTable } from '../services/insertUserIntoTable'
 
-export default async function createUser(
-   req: Request,
-   res: Response
-): Promise<void> {
-   try {
+export const createUser = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const { email, password } = req.body
 
-      const { name, nickname, email, password } = req.body
+        if (!email || email.indexOf("@") === -1) {
+            res.statusCode = 422
+            throw new Error("Email inválido")
+        }
 
-      if (!name || !nickname || !email || !password) {
-         res.statusCode = 422
-         throw new Error("Preencha os campos 'name','nickname', 'password' e 'email'")
-      }
+        if (!password || password.length < 6) {
+            res.statusCode = 422
+            throw new Error("Senha inválida")
+        }
 
-      const [user] = await connection('to_do_list_users')
-         .where({ email })
+        const verifyEmail = await getUserByEmail(email)
 
-      if (user) {
-         res.statusCode = 409
-         throw new Error('Email já cadastrado')
-      }
+        if (verifyEmail) {
+            res.statusCode = 409
+            throw new Error("Email já cadastrado")
+        }
 
-      const id: string = Date.now().toString()
+        const id = generateId()
 
-      const newUser: user = { id, name, nickname, email, password }
+        await insertUserIntoTable(id, email, password)
 
-      await connection('to_do_list_users')
-         .insert(newUser)
+        const token = generateToken({ id })
 
-      res.status(201).send({ newUser })
-
-   } catch (error) {
-
-      if (res.statusCode === 200) {
-         res.status(500).send({ message: "Internal server error" })
-      } else {
-         res.send({ message: error.message })
-      }
-   }
+        res.status(201).send({ token })
+    }
+    catch (err: any) {
+        if (res.statusCode === 200) {
+            res.status(500).send({ message: "Internal server error" })
+        } else {
+            res.send({ message: err.message })
+        }
+    }
 }
