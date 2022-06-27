@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import connection from "../connection";
 import { Authenticator } from "../services/Authenticator";
 import { HashManager } from "../services/hashManager";
-import { IdGenerator } from "../services/idGenerator";
+import { IdGenerator } from "../services/IdGenerator";
 import { authenticationData, user } from "../types";
 
 export default async function login(
