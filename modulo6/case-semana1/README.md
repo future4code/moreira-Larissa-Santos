@@ -5,14 +5,20 @@ Este projeto tem como objetivo criar um site de videos usando de resultados da A
 ##Tecnologias e Libs utilizadas:
 
 React
+
 CSS e Estilização com Styled-Components
+
 Integração de API com o Axios
+
 UUID
+
 React-Router-Dom
+
 Hooks
 
 ##Link do Surge
 
+nutty-food.surge.sh
 
 ##API utilizada:
 
