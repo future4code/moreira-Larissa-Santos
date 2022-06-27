@@ -1,13 +1,15 @@
 GET http://localhost:3003/test/hello 
 Content-Type: application/json
 
+
 ###
 
 POST http://localhost:3003/users 
 Content-Type: application/json
 
 {
-"id": 9, "name": "Angelo", "cpf": 99999999999, "birth": "2021-05-15", "balance": 0, "transaction": [2000]
+"id": 9, "name": "Angelo", "cpf": 99999999999, "birth": "2021-05-15", "balance": 0, "internalTransfer": [2000]
+
 }
 
 ###
