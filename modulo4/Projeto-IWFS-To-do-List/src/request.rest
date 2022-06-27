@@ -1,0 +1,28 @@
+GET http://localhost:3003/user?id=3 Content-Type: application/json
+
+### GET http://localhost:3003/task?id=001 Content-Type: application/json
+
+### POST http://localhost:3003/user Content-Type: application/json
+
+{
+"name": "Larissa Firmino", "nickname": "Lari", "email": "larissa@gmail.com"
+
+}
+
+### PUT http://localhost:3003/user/edit?id=2 Content-Type: application/json
+
+{
+"name": "Janaylla Firm", "nickname": "Jana"
+}
+
+
+### POST http://localhost:3003/task Content-Type: application/json
+
+{
+	"title": "Criar banco dos alunos",
+	"description": "Devemos criar o banco dos alunos para o módulo do backend",
+	"limitDate": "04/05/2020",
+	"creatorUserId": "001"
+}
+
+###
